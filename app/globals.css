@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+@font-face {
+  font-family: "Avenir Next Condensed Custom";
+  src: local("Avenir Next Condensed"), local("AvenirNextCondensed-Regular"), local("AvenirNextCondensed");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir Next Condensed Custom";
+  src: local("Avenir Next Condensed Medium"), local("AvenirNextCondensed-Medium");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Avenir Next Condensed Custom";
+  src: local("Avenir Next Condensed Bold"), local("AvenirNextCondensed-Bold");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Avenir Next Condensed Custom";
+  src: local("Avenir Next Condensed Italic"), local("AvenirNextCondensed-Italic");
+  font-style: italic;
+  font-weight: 400;
+}
+
+body {
+  @apply bg-cream font-sans text-ink antialiased;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Avenir Next Condensed Custom", "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+i,
+em {
+  @apply italic;
+}
+
+::selection {
+  background: rgba(123, 21, 135, 0.2);
+}
